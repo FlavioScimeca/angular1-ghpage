@@ -1,0 +1,9 @@
+<div [ngClass]="server == 'red' ? 'red' : 'green'">
+  <h2>Stato del server {{ getStatus() }}</h2>
+  <hr />
+  <div *ngIf="server == 'green'; else offline">
+    <app-utente></app-utente>
+  </div>
+
+  <ng-template #offline> Server Down </ng-template>
+</div>

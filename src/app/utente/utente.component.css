@@ -1,0 +1,15 @@
+.bold {
+  font-size: larger;
+  color: rgb(58, 6, 93);
+}
+.bg-none {
+  background-color: white;
+}
+.true {
+  color: green;
+  font-weight: bold;
+}
+.false {
+  color: red;
+  font-weight: bold;
+}

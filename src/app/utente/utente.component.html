@@ -1,0 +1,15 @@
+<div ngClass="bg-none">
+  <h4>Dati dell utenti</h4>
+
+  <ul *ngFor="let utente of utenti; index as i">
+    <li>{{ i + 1 }}</li>
+    <li ngClass="bold">{{ utente.nome }}</li>
+    <li>{{ utente.cognome }}</li>
+    <li>{{ utente.eta }}</li>
+    <li>{{ utente.citta }}</li>
+    <li>{{ utente.pizza }}</li>
+    <li [ngClass]="utente.status == true ? 'true' : 'false'">
+      {{ utente.status }}
+    </li>
+  </ul>
+</div>
